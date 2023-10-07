@@ -16,7 +16,7 @@
         <input type="text" name="address" id="address" value="{{$students->address}}" class="form-control"></br>
         <label>Утас</label></br>
         <input type="text" name="Utas" id="Utas" value="{{$students->Utas}}" class="form-control"></br>
-        <input type="submit" value="Update" class="btn btn-success"></br>
+        <input type="submit" value="Засах" class="btn btn-success"></br>
     </form>
 
   </div>

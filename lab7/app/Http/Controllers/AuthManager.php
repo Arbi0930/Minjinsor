@@ -34,7 +34,7 @@ class AuthManager extends Controller
         }
 
 
-        return redirect()->route('login')->with('error', 'Invalid credentials');
+        return redirect()->route('login')->with('error', 'И-Мэйл эсүүл нууц үг буруу байна');
     }
     function registrationPost(Request $request){
         $request->validate([
@@ -56,7 +56,7 @@ class AuthManager extends Controller
             return redirect(route('registration'))->with('error','Бүртгүүлэхэд алдаа гарлаа');
         }
 
-        return redirect(route('login'))->with('success','Amjilttai');
+        return redirect(route('login'))->with('success','Амжилттай бүртгүүллээ');
     }
 
     function logout(){
