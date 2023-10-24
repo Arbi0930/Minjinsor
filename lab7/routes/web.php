@@ -26,6 +26,8 @@ Route::post('/registration',[AuthManager::class, 'registrationPost'])->name('reg
 Route::get('/logout', [AuthManager::class, 'logout'])->name('logout');
 Route::group(['middleware' => 'auth'], function(){
     Route::resource("/student", StudentController::class);
+
+
 });
 
 // Route::resource("/student", StudentController::class);

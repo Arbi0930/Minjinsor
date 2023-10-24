@@ -7,6 +7,9 @@ use App\Models\Student; //add Student Model - Data is coming from the database v
 
 class StudentController extends Controller
 {
+    function student(){
+        return view('students.index');
+    }
     /**
      * Display a listing of the resource.
      *
